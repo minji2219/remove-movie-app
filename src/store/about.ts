@@ -1,8 +1,15 @@
 import {Store} from '../core/heropy'
-import MyImage from '../img/민지 일러.jpg'; 
 
-export default new Store({
-  photo:MyImage,
+interface State{
+  photo:string
+  name:string
+  email:string
+  blog:string
+  github:string
+  repository:string
+}
+export default new Store<State>({
+  photo:'https://heropy.blog/css/images/logo.png',
   name:'ming / SeoMinJi',
   email:'aabb0219@naver.com',
   blog:'https://blog.naver.com/aabb0219',
